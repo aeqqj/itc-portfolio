@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    margin: auto;
+}
+p {
+    color:aliceblue;
+    font-size: 10px;
+    font-family: monospace;
+}
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #0f0f0f;
+    display: flex;
+    margin: auto;
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+.flex-container > div {
+    height: 1000px;
+    width: 45vw;
+    background-color: #0f0f0f;
+    margin: auto;
+}
+.language-used {
+    display: flex;
+    height: 150px;
+    width: 30vw;
+    margin: auto;
+    margin-top: 50px;
+    border: solid #267c75;
+
+}
+#title {
+    margin-top: 30px;
+    height: 50px;
+    background-color: #0f0f0f;
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+    color: aliceblue;
+}
+#small-title {
+    margin-top: 10px;
+    height: 20px;
+    background-color: #0f0f0f;
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    color: aliceblue;
+}
+#about-site {
+    
+}
