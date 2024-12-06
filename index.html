@@ -1,103 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            * {
-                font-family: monospace;
-            }
-
-            body {
-                height: 100vh;
-                width: 100vw;
-                background-color: #0f0f0f;
-                overflow: hidden;
-                margin: auto;
-            }
-                
-            .flex-container {
-                height: 100vh;
-                width: 100vw;
-                background-color: #0f0f0f;
-                display: flex;
-                margin: auto;
-            }
-            .flex-container > div {
-                margin: auto;
-                background-color: #0f0f0f;
-                height: 400px;
-                width: 100vw;
-            }
-            .navigation-group {
-                height: 50px;
-                width: 40vw;
-                margin: auto;
-                background-color: #0f0f0f;
-                text-align: center;
-                display: flex;
-                justify-content: center;
-                justify-content: space-between;
-                row-gap: 100px;
-                margin-top: 20px;
-            }
-            .navigation-group > button {
-                border: solid 2px;
-                background-color: #0f0f0f;
-                height: 50px;
-                width: 200px;
-                color: #fffbfb;
-                border-radius: 30px;
-            }
-            #small-title {
-                background-color:#0f0f0f;
-                height: 15px;
-                color: antiquewhite;
-                text-align: center;
-                align-content: center;
-                margin: auto;
-                margin-top: 3%;
-                font-family: monospace;
-                font-size: 25px;
-                user-select: none;
-            }
-            #title {
-                background-color:#0f0f0f;
-                height: 95px;
-                color: antiquewhite;
-                text-align: center;
-                align-content: center;
-                margin: auto;
-                font-family: monospace;
-                font-size: 70px;
-                user-select: none;
-            }
-            #description {
-                background-color:#0f0f0f;
-                height: 80px;
-                width: 700px;
-                color: antiquewhite;
-                text-align: center;
-                align-content: center;
-                margin: auto;
-                border: 2px solid #fffbfb;
-                font-family: monospace;
-                font-size: 20px;
-                user-select: none;
-            }
-
-        </style>
+        <link rel="stylesheet" href="css-files/index-style.css">
+        <title>charles & jade</title>
     </head>
     <body>
-        <div class="flex-container">
-            <div>
-                <div id="small-title">welcome to</div>
-                <div id="title">charles & jade</div>
+        <section class="center-section">
+            <div class="center-div">
+                <div class="title">
+                    <div id="small-title">welcome to</div>
+                    <div id="title">charles & jade</div>
+                </div>
                 <div id="description">hello there!</div>
-                <div class="navigation-group">
-                    <button id="navigation-button1">about</button>
-                    <button id="navigation-button2">portfolio</button>
-                    <button id="navigation-button3">contact</button>
+                <div class="navigation-buttons">
+                    <button>about</button>
+                    <button>portfolio</button>
+                    <button>contact</button>
                 </div>
             </div>
-        </div>
+        </section>
     </body>
 </html>
