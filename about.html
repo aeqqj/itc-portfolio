@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css-files/about-style.css">
         <title>charles & jade</title>
     </head>
     <body>
         <section class="body-div">
-            <div class="center-div">
+            <div class="center-div" id="content">
                 <div class="title">
                     <div id="title">charles & jade</div>
                     <div id="small-title">about</div>
                 </div>
                 <div class="languages">
-                    <img src="images/testimage.jpg" alt="1st">
-                    <img src="images/testimage.jpg" alt="2nd">
-                    <img src="images/testimage.jpg" alt="3rd">
+                    <img src="images/html.png" alt="1st">
+                    <img src="images/css.png" alt="2nd">
+                    <img src="images/js.png" alt="3rd">
                 </div>
+                <div id="languages-used">-languages used-</div>
                 <div id="about-site">
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Curabitur malesuada nulla libero, et luctus elit suscipit non. 
+                        Nullam semper maximus dignissim. Proin et erat lobortis, posuere nibh ut, 
+                        lacinia mi. Donec mauris mi, cursus nec tempus et, dignissim eu quam. 
+                        In hac habitasse platea dictumst. Sed tristique felis quis nulla mattis, 
+                        imperdiet gravida dui vestibulum. Quisque vel viverra nisi, id tincidunt 
+                        mi. Suspendisse ut odio at lorem sagittis faucibus sed sed nulla. 
+                        Nam ac eros vel ante pharetra placerat. </p>
+                    <p>In hac habitasse platea dictumst. Morbi rhoncus justo vel felis tristique dictum.
+                        Aliquam laoreet elit egestas tincidunt dignissim. Quisque posuere consectetur urna porta feugiat.
+                        Mauris arcu massa, dictum non mauris eget, facilisis tincidunt ipsum. Cras vitae risus leo. 
+                        Proin libero justo, porttitor at ullamcorper at, ullamcorper id eros. Pellentesque accumsan faucibus sodales. 
+                        Duis at mauris et neque porttitor laoreet dictum quis nisl. Quisque congue aliquet eleifend. 
+                        Ut volutpat condimentum eros ac viverra. Praesent ut auctor leo. Nulla efficitur consectetur enim ac posuere. 
+                        Aliquam erat volutpat. Pellentesque euismod, purus vestibulum iaculis tristique, purus nunc ullamcorper est, ac semper sem lorem ut velit.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Curabitur malesuada nulla libero, et luctus elit suscipit non. 
+                        Nullam semper maximus dignissim. Proin et erat lobortis, posuere nibh ut, 
+                        lacinia mi. Donec mauris mi, cursus nec tempus et, dignissim eu quam. 
+                        In hac habitasse platea dictumst. Sed tristique felis quis nulla mattis, 
+                        imperdiet gravida dui vestibulum. Quisque vel viverra nisi, id tincidunt 
+                        mi. Suspendisse ut odio at lorem sagittis faucibus sed sed nulla. 
+                        Nam ac eros vel ante pharetra placerat. </p>
                 </div>
-                <div class="about-me">
-                    <div id=""></div>
+                <div id="about-me">
+                    <div class="me">
+                        <img src="images/testimage.jpg" alt="testimage" >
+                    </div>
+                    <div class="me">
+                        <p> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+                            blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+                        </p>
+                    </div>
                 </div>
+                <div id="placeholder"></div>
+            </div>
+            <div class="navigation-buttons" id="buttonz">
+                <button class="buttons" id="portfolioButton">portfolio</button>
+                <button class="buttons" id="homepageButton">homepage</button>
+                <button class="buttons" id="contactButton">contact</button>
             </div>
         </section>
+        <script>
+            const content = document.getElementById('content');
+            const buttons = document.querySelectorAll('.buttons');
+
+            window.onload = () => {
+                content.classList.add('visible');
+                buttonz.classList.add('visible');
+            };
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    content.classList.remove('visible');
+                    buttonz.classList.remove('visible');
+                    setTimeout(() => {
+                        if (button.id === 'portfolioButton') {
+                            window.location.href = 'portfolio.html';
+                        } else if (button.id === 'homepageButton') {
+                            window.location.href = 'index.html'
+                        } else if (button.id === 'contactButton') {
+                            window.location.href = 'contact.html';
+                        }
+                    }, 500);
+                });
+            });
+        </script>
     </body>
 </html>

@@ -4,20 +4,43 @@
         <link rel="stylesheet" href="css-files/index-style.css">
         <title>charles & jade</title>
     </head>
-    <body>
-        <section class="center-section">
-            <div class="center-div">
-                <div class="title">
-                    <div id="small-title">welcome to</div>
-                    <div id="title">charles & jade</div>
-                </div>
-                <div id="description">hello there!</div>
-                <div class="navigation-buttons">
-                    <button>about</button>
-                    <button>portfolio</button>
-                    <button>contact</button>
-                </div>
+<body>
+    <section class="center-section" id="content">
+        <div class="center-div">
+            <div class="title">
+                <div id="small-title">welcome to</div>
+                <div id="title">charles & jade</div>
             </div>
-        </section>
-    </body>
+            <div id="description">hello there!</div>
+            <div id="navigation-buttons">
+                <button class="buttons" id="aboutButton">about</button>
+                <button class="buttons" id="portfolioButton">portfolio</button>
+                <button class="buttons" id="contactButton">contact</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        const content = document.getElementById('content');
+        const buttons = document.querySelectorAll('.buttons');
+
+        window.onload = () => {
+            content.classList.add('visible');
+        };
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                content.classList.remove('visible');
+                setTimeout(() => {
+                    if (button.id === 'aboutButton') {
+                        window.location.href = 'about.html';
+                    } else if (button.id === 'portfolioButton') {
+                        window.location.href = 'portfolio.html';
+                    } else if (button.id === 'contactButton') {
+                        window.location.href = 'contact.html';
+                    }
+                }, 500);
+            });
+        });
+    </script>
+</body>
 </html>

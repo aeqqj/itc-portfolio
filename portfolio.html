@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css-files/portfolio-style.css">
+        <title>charles & jade</title>
+    </head>
+    <body>
+        <div class="body-div" id="content">
+            <div class="title">
+                <div id="title">charles & jade</div>
+                <div id="small-title">portfolio</div>
+            </div>
+            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
+                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
+                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
+                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
+                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
+                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
+            </div>
+            <div class="navigation-buttons" id="buttonz">
+                <button class="buttons" id="aboutButton">about</button>
+                <button class="buttons" id="homepageButton">homepage</button>
+                <button class="buttons" id="contactButton">contact</button>
+            </div>
+        </div>
+        <script src="js-files/portfoliojs.js"></script>
+        <script>
+            const content = document.getElementById('content');
+            const buttons = document.querySelectorAll('.buttons');
+
+            window.onload = () => {
+                content.classList.add('visible');
+                buttonz.classList.add('visible');
+            };
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    content.classList.remove('visible');
+                    buttonz.classList.remove('visible');
+                    setTimeout(() => {
+                        if (button.id === 'aboutButton') {
+                            window.location.href = 'about.html';
+                        } else if (button.id === 'homepageButton') {
+                            window.location.href = 'index.html'
+                        } else if (button.id === 'contactButton') {
+                            window.location.href = 'contact.html';
+                        }
+                    }, 500);
+                });
+            });
+        </script>
+    </body>
+</html>
