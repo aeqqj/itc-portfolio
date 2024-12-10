@@ -11,12 +11,12 @@
                 <div id="small-title">portfolio</div>
             </div>
             <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
-                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
-                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
-                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
-                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
-                <img class="image" src="images/testimage.jpg" alt="qt" draggable="false">
+                <img class="image" id="portfolio1" src="images/peanuts.png" alt="qt" draggable="false" usemap="#portfolio1">
+                <img class="image" id="portfolio2" src="images/peanuts.png" alt="qt" draggable="false" usemap="#portfolio2">
+                <img class="image" id="portfolio3" src="images/peanuts.png" alt="qt" draggable="false" usemap="#portfolio3">
+                <img class="image" id="portfolio4" src="images/peanuts.png" alt="qt" draggable="false" usemap="#portfolio4">
+                <img class="image" id="portfolio5" src="images/peanuts.png" alt="qt" draggable="false" usemap="#portfolio5">
+                <img class="image" id="portfolio6" src="images/peanuts.png" alt="qt" draggable="false" usemap="#portfolio6">
             </div>
             <div class="navigation-buttons" id="buttonz">
                 <button class="buttons" id="aboutButton">about</button>
@@ -24,10 +24,29 @@
                 <button class="buttons" id="contactButton">contact</button>
             </div>
         </div>
+        <map name="portfolio1">
+            <area shape="default" alt="Portfolio 1" href="portfolio1.html">
+        </map>
+        <map name="portfolio2">
+            <area shape="default" alt="Portfolio 2" href="portfolio2.html">
+        </map>
+        <map name="portfolio3">
+            <area shape="default" alt="Portfolio 3" href="portfolio3.html">
+        </map>
+        <map name="portfolio4">
+            <area shape="default" alt="Portfolio 4" href="portfolio4.html">
+        </map>
+        <map name="portfolio5">
+            <area shape="default" alt="Portfolio 5" href="portfolio5.html">
+        </map>
+        <map name="portfolio6">
+            <area shape="default" alt="Portfolio 6" href="portfolio6.html">
+        </map>
         <script src="js-files/portfoliojs.js"></script>
         <script>
             const content = document.getElementById('content');
             const buttons = document.querySelectorAll('.buttons');
+            const areas = document.querySelectorAll('area');
 
             window.onload = () => {
                 content.classList.add('visible');
@@ -49,6 +68,18 @@
                     }, 500);
                 });
             });
+
+            areas.forEach(area => {
+            area.addEventListener('click', (e) => {
+                e.preventDefault();
+                const link = area.href;
+                content.classList.remove('visible');
+                buttonz.classList.remove('visible');
+                setTimeout(() => {
+                    window.location.href = link;
+                }, 500);
+            });
+        });
         </script>
     </body>
 </html>

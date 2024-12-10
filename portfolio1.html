@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>charles & jade</title>
+        <style>
+            * {
+                font-family: monospace;
+                color: aliceblue;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #0f0f0f;
+                margin: auto;
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+            body::-webkit-scrollbar {
+                display: none;
+            }
+            ul, ol {
+                margin: 0;
+                padding: 0;
+                font-size: 25px;
+                color: aliceblue;
+                list-style: none;
+            }
+            li {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 2rem;
+            }
+            #body-div {
+                display: flex;
+                justify-content: flex-end;
+                min-height: 100vh;
+                width: 100vw;   
+            }
+            #table-of-contents {
+                position: sticky;
+                top: 150px;;
+                height: 50vh;
+                width: 30vw;
+                margin-left: 200px;
+            }
+            #ppt {
+                display: flex;
+                flex-direction: column;
+                min-height: 1000px;
+                width: 70vw;
+                align-items: center;
+                justify-content: center;
+            }
+            #contents {
+                border: 2px solid whitesmoke;
+            }
+            #back {
+                display: flex;
+                height: 50px;
+                width: 100px;
+                margin-top: 20px;
+                position: sticky;
+                top: 10px;
+                left: 10px;
+                align-self: flex-start;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid white;
+                border-radius: 20px;
+            }
+            .ppt-slides {
+                width: 75%;
+                margin: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="body-div">
+            <div id="back"><a href="javascript:history.back()" style="font-size: 18px;">back</a></div>
+            <div id="table-of-contents">
+                <p style="font-size: 35px; margin-bottom: 10px;">Computer Science and other Academic Disciplines</p>
+                <ol id="contents">
+                    <li>Introduction</li>
+                    <li>Computer Discipline
+                        <ul>
+                            <li>Computer Science </li>
+                            <li>Computer Engineering </li>
+                            <li>Software Engineering </li>
+                            <li>Information Technology </li>
+                            <li>Information System </li>
+                        </ul>
+                    </li>
+                    <li>Analysis/Reaction</li>
+                    <li>About Me</li>
+                    <li>References</li>
+                </ol>
+            </div>
+            <div id="ppt">
+                <img class="ppt-slides" id="title" draggable="false" src="images/portfolio1/1.png" alt="ppt" style="margin-top: 250px;">
+                <img class="ppt-slides" id="history" draggable="false" src="images/portfolio1/2.png" alt="ppt">
+                <img class="ppt-slides" id="disciplines" draggable="false" src="images/portfolio1/3.png" alt="ppt">
+                <img class="ppt-slides" id="compsci" draggable="false" src="images/portfolio1/4.png" alt="ppt">
+                <img class="ppt-slides" id="compeng" draggable="false" src="images/portfolio1/5.png" alt="ppt">
+                <img class="ppt-slides" id="softeng" draggable="false" src="images/portfolio1/6.png" alt="ppt">
+                <img class="ppt-slides" id="it" draggable="false" src="images/portfolio1/7.png" alt="ppt">
+                <img class="ppt-slides" id="is" draggable="false" src="images/portfolio1/8.png" alt="ppt">
+                <img class="ppt-slides" id="analysis" draggable="false" src="images/portfolio1/9.png" alt="ppt">
+                <img class="ppt-slides" id="about" draggable="false" src="images/portfolio1/10.png" alt="ppt">
+                <img class="ppt-slides" id="references" draggable="false" src="images/portfolio1/11.png" alt="ppt">
+            </div>
+        </div>
+    </body>
+</html>
