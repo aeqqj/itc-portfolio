@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
     user-select: none;
+    scroll-behavior: smooth;
 }
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #0f0f0f;
+    background-color: #000000;
     overflow: hidden;
     margin: auto;
 }
@@ -15,7 +20,7 @@ body {
     height: 100vh;
     width: 100vw;
     align-items: center;
-    background-color: #0f0f0f;
+    background-color: #000000;
     opacity: 0;
     transition: opacity 0.5s ease-in-out 0.3s;
 }
@@ -28,7 +33,7 @@ body {
     height: 100px;
     width: 50vw;
     margin-top: 30px;
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 .navigation-buttons {
     display: flex;
@@ -40,7 +45,7 @@ body {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    background-color: #0f0f0f;
+    background-color: #000000;
     border: 1px solid white;
     border-radius: 15px;
     border-bottom: none;
@@ -55,7 +60,7 @@ body {
 .buttons {
     height: 50px;
     width: 200px;
-    background-color: #0f0f0f;
+    background-color: #000000;
     border-radius: 30px;
     border: solid 3px;
     color: #fffbfb;
@@ -75,14 +80,15 @@ body {
     top: 55%;
     left: 42.5%;
     transform: translate(0%, -50%);
-    background-color: #0f0f0f;
+    background-color: #000000;
+    
 }
 #image-track > img {
     height: 46vmin;
     width: 30vmin;
     object-fit: cover;
     object-position: 100% 50%;
-    border-radius: 15px;
+    border: 1px solid #ffffff;
 }
 #title {
     height: 75px;

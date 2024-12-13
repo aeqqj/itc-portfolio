@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
 }
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #0f0f0f;
+    background-color: #000000;
     overflow: hidden;
     margin: auto;
 }
@@ -13,7 +18,7 @@ body {
     height: 100vh;
     width: 50vw;
     margin: auto;
-    background-color: #0f0f0f;
+    background-color: #000000;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -26,7 +31,7 @@ body {
     height: 300px;
     width: 50vw;
     margin: auto;
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 .title {
     display: flex;
@@ -34,12 +39,12 @@ body {
     height: 120px;
     width: 50vw;
     margin: auto;
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 .buttons {
     height: 50px;
     width: 200px;
-    background-color: #0f0f0f;
+    background-color: #000000;
     border-radius: 30px;
     border: solid 3px;
     color: #fffbfb;
@@ -56,7 +61,7 @@ body {
     align-items: center;
     justify-content: center;
     justify-content: space-around;
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 .buttons:hover {
     transform: scale(1.05);
@@ -66,7 +71,7 @@ body {
     margin: 0%;
     padding: 0%;
     text-align: center;
-    background-color: #0f0f0f;
+    background-color: #000000;
     font-size: 25px;
     color: #ffffff;
 }
@@ -75,7 +80,7 @@ body {
     text-align: center;
     margin: 0%;
     padding: 0%;
-    background-color: #0f0f0f;
+    background-color: #000000;
     color: #fffbfb;
     font-size: 75px;
 }
@@ -85,7 +90,7 @@ body {
     margin: auto;
     text-align: center;
     align-content: center;
-    background-color: #0f0f0f;
+    background-color: #000000;
     color: #fffbfb;
     border: solid #fffbfb;
     font-size: 20px;

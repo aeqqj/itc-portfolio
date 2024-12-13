@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 * {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
     color: aliceblue;
+    user-select: none;
 }
+
+
 body {
     height: 100vh;
     width: 100vw;
-    background-color: #0f0f0f;
+    background-color: #000000;
     margin: auto;
 }
 .body-div {
@@ -13,7 +21,7 @@ body {
     height: 100vh;
     width: 100vw;
     justify-content: center;
-    background-color: #0f0f0f;
+    background-color: #000000;
     position: relative;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -24,7 +32,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     width: 50vw;
-    background-color: #0f0f0f;
+    background-color: #000000;
     opacity: 0;
     transition: opacity 0.5s ease-in-out 0.3s;
 }
@@ -44,7 +52,7 @@ body {
     width: 100%;
     margin-top: 65px;
     justify-content: center;
-    background-color:  #0f0f0f;
+    background-color:  #000000;
 }
 .languages > img {
     height: 145px;
@@ -56,9 +64,9 @@ body {
     align-items: center;
 }
 .me > img {
-    height: 240px;
-    width: 240px;
-    margin-left: 40px;
+    height: 220px;
+    width: 220px;
+    margin-left: 20px;
     object-fit: cover;
     object-position: 0% 50%;
 }
@@ -66,6 +74,7 @@ body {
     height: 85%;
     width: 90%;
     margin-left: 38px;
+    text-align: justify;
     font-size: 20px;
 }
 .navigation-buttons {
@@ -77,7 +86,7 @@ body {
     bottom: 0;
     align-items: center;
     justify-content: space-around;
-    background-color: #0f0f0f;
+    background-color: #000000;
     border: 1px solid white;
     border-radius: 15px;
     border-bottom: none;
@@ -92,7 +101,7 @@ body {
 .buttons {
     height: 50px;
     width: 200px;
-    background-color: #0f0f0f;
+    background-color: #000000;
     border-radius: 30px;
     border: solid 3px;
     color: #fffbfb;
@@ -147,9 +156,13 @@ body {
     flex: 0 0 100px;
     height: auto;
     width: auto;
-    background-color: #0f0f0f;
+    background-color: #000000;
 }
 #homepageButton {
     height: 60px;
     width: 500px;
+}
+#html-image {
+    height: 132px;
+    margin-top: 16px;
 }

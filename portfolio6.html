@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css-files/portfolio-1-style.css">
+        <link rel="icon" type="image/ico" href="images/site-logo.ico">
+        <title>charles & jade</title>
+        <style>
+            h2 {
+                font-size: 45px;
+            }
+            h3 {
+                font-size: 30px;
+            }
+
+            #ppt {
+                display: flex;
+                align-items: flex-start;
+
+            }
+            #ppt > section {
+                margin-left: 80px;
+                align-items: left;
+                justify-content: left;
+            }
+            .text {
+                width: 90%;
+                font-size: 20px;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="body-div">
+            <button id="back" onclick="history.back()" style="font-size: 18px;">back</button>
+            <div class="class-table" id="table-of-contents" style="margin-top: 0px; top: 180px;">
+                <p style="font-size: 35px; margin-bottom: 10px;">Comparative Study on Different Types of Computers</p>
+                <ol id="contents">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#types">Types of Computers</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#sc">Super Computer</a></li>
+                            <li><a href="#mc">Mainframe Computer</a></li>
+                            <li><a href="#mic">Mini Computer</a></li>
+                            <li><a href="#s">Server</a></li>
+                            <li><a href="#ws">Workstation</a></li>
+                            <li><a href="#micc">Micro Computer</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#references">References</a></li>
+                </ol>
+            </div>
+            <div id="ppt">
+                <section>
+                    <h2 id="introduction">Introduction</h2>
+                    <div class="text">
+                        The motherboard is the heart of the computer, as it connects all the different components of the system (Tomljanovic & Kurelovic, 2013). 
+                        It is important for the functionality as it is the core component that facilitates communication between the processor, memory, storage, and peripheral devices. 
+                        With the rapid development of technology, it is no surprise that hardware components, especially motherboards, have evolved significantly over the years. 
+                        What was once bulky with limited functions has now are now smaller, more efficient, and multifunctional. 
+                        This comparative study will examine the evolution of different motherboard form factors throughout the years, exploring how these changes were driven by technological advancements and the shifting needs of users. 
+                        By understanding the reasons behind the creation of each form factor, we can gain deeper insight as to how these motherboards have shaped modern computing as a whole.
+                    </div>
+                </section>
+                <section>
+                    <h2 id="types" style="margin-bottom: 5px;">Motherboards</h2>
+                </section>
+                <section>
+                    <h3 id="sc">Super Computer</h3>
+                    <div class="text">
+                        <u>IBM Summit (4608 nodes)</u><br><br>
+                        The IBM Summit is the former fastest supercomputer, holding the number 1 position on this list from November 2018 to June 2020. 
+                        It’s a supercomputer that was designed to “push the boundaries of computing and human understanding”. 
+                        It has been utilized for a lot of different uses, primarily in the field of medicine.<br>
+                        <br>
+                        CPU: IBM POWER9 (2/node)<br><br>
+                        Memory: 512GB DDR4 + 96GB HBM2 (per node)<br><br>
+                        Processing Speed: 200 petaflops (able to reach an exaflop)<br><br>
+                        Calculating Power: Extremely High, designed for exascale computing<br><br>
+                        Working Principle: Uses a parallel processing model, leveraging both CPUs (POWER9) and NVIDIA Volta GPUs to accelerate computations<br><br>
+                        Energy Consumption: 13 Megawatts<br><br>
+                        Field of Use: Primarily used for scientific research, artificial intelligence, climate modeling, genomics, and high-performance simulations<br><br> 
+                    </div>
+                </section>
+                <section>
+                    <h3 id="mc">Mainframe Computer</h3>
+                    <div class="text">
+                        <u>IBM Z16-A02</u><br><br>
+                        The IBM Z16-A02 is the latest iteration of the Z mainframes of IBM. 
+                        It features the esteemed IBM Telum Processor, which is designed to help customers achieve business insights at scale across banking, 
+                        finance, trading, insurance applications, and customer interactions.<br><br>
+                
+                        CPU: IBM Telum (5.2 GHz)<br><br>
+                        Memory: 40TB DDR4<br><br>
+                        Processing Speed: 5.2 GHz<br><br>
+                        Calculating Power: Relatively high<br><br>
+                        Working Principle: Uses mainframe architecture with specialized processors for parallel I/O and transaction management<br><br>
+                        Energy Consumption: 10-15 Kilowatts<br><br>
+                        Field of Use: Typically used in industries that require high availability, security, and scalability, such as banking, retail, and insurance<br><br>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="mic">Mini Computer</h3>
+                    <div class="text">
+                        <u>PDP-8/E</u><br><br>
+                        The PDP-8/E is a Mini Computer that is primarily designed as a general-purpose computer. 
+                        Relative to its time, the PDP-8/E was used to handle contemporary telecommunications and text. 
+                        It is a fast, compact, and inexpensive computer that is designed to meet the needs of the average user.<br><br>
+                
+                        CPU: 12-bit Processor<br><br>
+                        Memory: 32KB<br><br>
+                        Processing Speed: 1 MHz<br><br>
+                        Calculating Power: Relatively low, designed for simple arithmetic and logical operations<br><br>
+                        Working Principle: Follows the fetch-decode-execute cycle, utilizing program memory to store instructions and data together<br><br>
+                        Energy Consumption: Lesser than or equal to 450 Watts<br><br>
+                        Field of Use: Designed for industrial process control applications. 
+                        Although it is considered to be slow by today’s standards, its contribution to the medical field in terms of data processing was significant.<br><br> 
+                    </div>
+                </section>
+                <section>
+                    <h3 id="s">Server</h3>
+                    <div class="text">
+                        <u>Dell PowerEdge R740</u><br><br>
+                        The Dell PowerEdge R740 is a server computer that capitalizes on its dual-socket 2U rack system to accelerate application performance. 
+                        It is optimized for application performance and storage scalability, which gives it an edge in comparison to other server computers in its range.<br><br>
+                
+                        CPU: Up to two 2nd Generation Intel Xeon Scalable processors<br><br>
+                        Memory: Volatile: 24 x DDR4 DIMM slots, up to 3TB (RDIMM/LRDIMM)<br><br>
+                        Processing Speed: 2.5 GHz, can reach up to 3.9 GHz with turbo boost<br><br>
+                        Calculating Power: Relatively High<br><br>
+                        Working Principle: Based on x86 architecture using Intel Xeon processors, works by executing tasks in parallel across multiple cores, enabling high-throughput processing for enterprise applications<br><br>
+                        Energy Consumption: Up to 1600 Watts<br><br>
+                        Field of Use: Commonly used for virtualization, cloud computing, database hosting, data analytics, and business applications. Also suitable for applications requiring high availability, such as ERP (Enterprise Resource Planning), and CRM (Customer Relationship Management)<br><br>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="ws">Workstation</h3>
+                    <div class="text">
+                        <u>Mac Pro (2019)</u><br><br>
+                        The Mac Pro (2019) is the most powerful computer workstation that Apple offers. 
+                        It specializes in handling extremely demanding processes that users require, such as video editing, 3D rendering, and similar tasks. 
+                        Equipped with the M2 Ultra chip, it can power through most workflows at unprecedented scales, providing users with highly efficient speeds for their work.<br><br>
+                
+                        CPU: Intel Xeon W processors, configurations with up to 28 cores per processor<br><br>
+                        Memory: Up to 1.5 TB of DDR4 ECC RAM<br><br>
+                        Processing Speed: 3.5 - 2.5 GHz (Depending on the model)<br><br>
+                        Calculating Power: Relatively High<br><br>
+                        Working Principle: Based on the x86-64 architecture using Intel Xeon processors, works by executing tasks in parallel using its multi-core CPU and GPU acceleration to handle professional workflows efficiently<br><br>
+                        Energy Consumption: 1.4 kW<br><br>
+                        Field of Use: Suited for Creative professionals, Scientific Computing & Simulation, architecture and engineering, and virtualization<br><br>
+                    </div>
+                </section>
+                <section>
+                    <h3 id="micc">Micro Computer</h3>
+                    <div class="text">
+                        <u>Google Pixelbook Go</u><br><br>
+                        The Google Pixelbook Go is a portable touchscreen laptop developed by Google that runs on ChromeOS. 
+                        It is designed for people who travel frequently or need a portable computer system, such as students or office workers.<br><br>
+                        
+                        CPU: Intel Core m3, Intel Core i5, or Intel Core i7 (8th Gen)<br><br>
+                        Memory: 4GB, 8GB, or 16GB LPDDR4X RAM<br><br>
+                        Processing Speed: Up to 1.8 GHz depending on the CPU, up to 4.6 GHz with Turbo Boost<br><br>
+                        Calculating Power: Average, designed for light office tasks and multitasking<br><br>
+                        Working Principle: The thing that sets Chromebooks apart from other laptops is its usage of cloud services for applications and storage, making it a lightweight and efficient device for users who primarily use web-based applications. It also uses the Chrome OS for its operating system.<br><br>
+                        Energy Consumption: 7 Watts<br><br>
+                        Field of Use: Suitable for remote work and cloud-based productivity, mainly office tasks and the like<br><br>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="table">Table</h2>
+                    <div class="text" style="margin-bottom: 30px;">
+                        A table for better demonstration:
+                    </div>
+                    <img src="images/tables/computer-table.png" alt="table" draggable="false" style="height: 555px;">
+                </section>
+                <section>
+                    <h2 id="references">References</h2>
+                    <div class="text">
+                        Oak Ridge Leadership Computing Facility. (n.d.). Summit. https://www.olcf.ornl.gov/olcf-resources/compute-systems/summit/<br><br>
+                        Software AG. (n.d.). Exploring the IBM z16 mainframe. https://www.softwareag.com/en_corporate/blog/ibm-z16.html<br><br>
+                        PDP-8 Online. (n.d.). PDP-8 emulator project. https://www.pdp8online.com/pdp8em/pdp8em.shtml<br><br>
+                        Dell Technologies. (n.d.). Dell EMC PowerEdge R740 technical specifications. https://i.dell.com/sites/csdocuments/shared-content_data-sheets_documents/en/poweredge-r740-spec-sheet.pdf<br><br>
+                        Apple Inc. (n.d.). Mac Pro (2019): Technical specifications. https://support.apple.com/en-ph/118461<br><br>
+                        Google Support. (n.d.). About Pixelbook Go specifications. https://support.google.com/pixelbook/answer/9481398?hl=en<br><br>
+                        IBM. (n.d.). IBM z16: The next-generation mainframe. https://www.ibm.com/products/z16<br><br>
+                        Digital Equipment Corporation. (1972). PDP-8 small computer handbook. https://www.grc.com/pdp-8/docs/PDP-8_Small_Computer_Handbook_1972.pdf<br><br>
+                        Bharadwaj, K. R., & Wadhwa, C. (2015). Introduction to computer. ResearchGate. https://www.researchgate.net/publication/283540479_INTRODUCTION_TO_COMPUTER<br><br>
+                    </div>
+                </section>
+                <div style="margin-top: 240px;"></div>
+            </div>
+        </div>
+        <script src="js-files/portfoliodoc.js"></script>
+        <script>
+            const content = document.getElementById('body-div');
+            const buttons = document.querySelectorAll('button');
+
+            window.onload = () => {
+                content.classList.add('visible');
+            };
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    content.classList.remove('visible');
+                    setTimeout(() => {
+                        if (button.id === 'back') {
+                            history.back();
+                        }
+                    }, 500);
+                });
+            });
+        </script>
+    </body>
+</html>

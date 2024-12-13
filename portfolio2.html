@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css-files/portfolio-1-style.css">
+        <link rel="icon" type="image/ico" href="images/site-logo.ico">
+        <title>charles & jade</title>
+    </head>
+    <body>
+        <div id="body-div">
+            <button id="back" onclick="history.back()" style="font-size: 18px;">back</button>
+            <div class="class-table" id="table-of-contents">
+                <p style="font-size: 35px; margin-bottom: 10px;">Data, Information, and Information Systems</p>
+                <ol id="contents">
+                    <li><a href="#data">Data and Information</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#acquisition">Data Acquisition</a></li>
+                            <li><a href="#types">Types of Data</a></li>
+                            <li><a href="#cycle">Data Information Cycle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#system">Information Systems</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="#modern">Modern Applications</a></li>
+                            <li><a href="#functions">Functions</a></li>
+                            <li><a href="#support">Support Systems</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#analysis">Analysis/Reaction</a></li>
+                    <li><a href="#references">References</a></li>
+                </ol>
+            </div>
+            <div id="ppt">
+                <div class="ppt-slides">
+                    <img draggable="false" src="images/portfolio2/1.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="data" draggable="false" src="images/portfolio2/2.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="acquisition" draggable="false" src="images/portfolio2/3.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="types" draggable="false" src="images/portfolio2/4.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="cycle" draggable="false" src="images/portfolio2/5.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="system" draggable="false" src="images/portfolio2/6.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="modern" draggable="false" src="images/portfolio2/7.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="functions" draggable="false" src="images/portfolio2/8.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="support" draggable="false" src="images/portfolio2/9.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="support2" draggable="false" src="images/portfolio2/10.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="analysis" draggable="false" src="images/portfolio2/11.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="references" draggable="false" src="images/portfolio2/12.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="references2" draggable="false" src="images/portfolio2/13.png" alt="ppt">
+                </div>
+                <div style="margin-top: 240px;"></div>
+            </div>
+        </div>
+        <script src="js-files/table-of-contents.js"></script>
+        <script>
+            const content = document.getElementById('body-div');
+            const buttons = document.querySelectorAll('button');
+
+            window.onload = () => {
+                content.classList.add('visible');
+            };
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    content.classList.remove('visible');
+                    setTimeout(() => {
+                        if (button.id === 'back') {
+                            history.back();
+                        }
+                    }, 500);
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,115 +1,87 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="css-files/portfolio-1-style.css">
+        <link rel="icon" type="image/ico" href="images/site-logo.ico">
         <title>charles & jade</title>
-        <style>
-            * {
-                font-family: monospace;
-                color: aliceblue;
-                scroll-behavior: smooth;
-                scrollbar-width: none;
-                -ms-overflow-style: none;
-                box-sizing: border-box;
-            }
-            body {
-                background-color: #0f0f0f;
-                margin: auto;
-                overflow-x: hidden;
-                overflow-y: scroll;
-            }
-            body::-webkit-scrollbar {
-                display: none;
-            }
-            ul, ol {
-                margin: 0;
-                padding: 0;
-                font-size: 25px;
-                color: aliceblue;
-                list-style: none;
-            }
-            li {
-                margin-top: 15px;
-                margin-bottom: 15px;
-                margin-left: 2rem;
-            }
-            #body-div {
-                display: flex;
-                justify-content: flex-end;
-                min-height: 100vh;
-                width: 100vw;   
-            }
-            #table-of-contents {
-                position: sticky;
-                top: 150px;;
-                height: 50vh;
-                width: 30vw;
-                margin-left: 200px;
-            }
-            #ppt {
-                display: flex;
-                flex-direction: column;
-                min-height: 1000px;
-                width: 70vw;
-                align-items: center;
-                justify-content: center;
-            }
-            #contents {
-                border: 2px solid whitesmoke;
-            }
-            #back {
-                display: flex;
-                height: 50px;
-                width: 100px;
-                margin-top: 20px;
-                position: sticky;
-                top: 10px;
-                left: 10px;
-                align-self: flex-start;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid white;
-                border-radius: 20px;
-            }
-            .ppt-slides {
-                width: 75%;
-                margin: 25px;
-            }
-        </style>
     </head>
     <body>
         <div id="body-div">
-            <div id="back"><a href="javascript:history.back()" style="font-size: 18px;">back</a></div>
-            <div id="table-of-contents">
+            <button id="back" style="font-size: 18px;">back</button>
+            <div class="class-table" id="table-of-contents">
                 <p style="font-size: 35px; margin-bottom: 10px;">Computer Science and other Academic Disciplines</p>
                 <ol id="contents">
-                    <li>Introduction</li>
-                    <li>Computer Discipline
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#disciplines">Computer Disciplines</a>
                         <ul>
-                            <li>Computer Science </li>
-                            <li>Computer Engineering </li>
-                            <li>Software Engineering </li>
-                            <li>Information Technology </li>
-                            <li>Information System </li>
+                            <li><a href="#compsci">Computer Science</a></li>
+                            <li><a href="#compeng">Computer Engineering</a></li>
+                            <li><a href="#softeng">Software Engineering</a></li>
+                            <li><a href="#it">Information Technology</a></li>
+                            <li><a href="#is">Information System</a></li>
                         </ul>
                     </li>
-                    <li>Analysis/Reaction</li>
-                    <li>About Me</li>
-                    <li>References</li>
+                    <li><a href="#analysis">Analysis/Reaction</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#references">References</a></li>
                 </ol>
             </div>
             <div id="ppt">
-                <img class="ppt-slides" id="title" draggable="false" src="images/portfolio1/1.png" alt="ppt" style="margin-top: 250px;">
-                <img class="ppt-slides" id="history" draggable="false" src="images/portfolio1/2.png" alt="ppt">
-                <img class="ppt-slides" id="disciplines" draggable="false" src="images/portfolio1/3.png" alt="ppt">
-                <img class="ppt-slides" id="compsci" draggable="false" src="images/portfolio1/4.png" alt="ppt">
-                <img class="ppt-slides" id="compeng" draggable="false" src="images/portfolio1/5.png" alt="ppt">
-                <img class="ppt-slides" id="softeng" draggable="false" src="images/portfolio1/6.png" alt="ppt">
-                <img class="ppt-slides" id="it" draggable="false" src="images/portfolio1/7.png" alt="ppt">
-                <img class="ppt-slides" id="is" draggable="false" src="images/portfolio1/8.png" alt="ppt">
-                <img class="ppt-slides" id="analysis" draggable="false" src="images/portfolio1/9.png" alt="ppt">
-                <img class="ppt-slides" id="about" draggable="false" src="images/portfolio1/10.png" alt="ppt">
-                <img class="ppt-slides" id="references" draggable="false" src="images/portfolio1/11.png" alt="ppt">
+                <div class="ppt-slides">
+                    <img draggable="false" src="images/portfolio1/1.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="intro" draggable="false" src="images/portfolio1/2.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="disciplines" draggable="false" src="images/portfolio1/3.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="compsci" draggable="false" src="images/portfolio1/4.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="compeng" draggable="false" src="images/portfolio1/5.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="softeng" draggable="false" src="images/portfolio1/6.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="it" draggable="false" src="images/portfolio1/7.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="is" draggable="false" src="images/portfolio1/8.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="analysis" draggable="false" src="images/portfolio1/9.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="about" draggable="false" src="images/portfolio1/10.png" alt="ppt">
+                </div>
+                <div class="ppt-slides">
+                    <img id="references" draggable="false" src="images/portfolio1/11.png" alt="ppt">
+                </div>
+                <div style="margin-top: 240px;"></div>
             </div>
         </div>
+        <script src="js-files/table-of-contents.js"></script>
+        <script>
+            const content = document.getElementById('body-div');
+            const buttons = document.querySelectorAll('button');
+
+            window.onload = () => {
+                content.classList.add('visible');
+            };
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    content.classList.remove('visible');
+                    setTimeout(() => {
+                        if (button.id === 'back') {
+                            history.back();
+                        }
+                    }, 500);
+                });
+            });
+        </script>
     </body>
 </html>
