@@ -69,18 +69,6 @@
                     }, 500);
                 });
             });
-
-            areas.forEach(area => {
-            area.addEventListener('click', (e) => {
-                e.preventDefault();
-                const link = area.href;
-                content.classList.remove('visible');
-                buttonz.classList.remove('visible');
-                setTimeout(() => {
-                    window.location.href = link;
-                }, 500);
-            });
-        });
         </script>
     </body>
 </html>
